@@ -2,15 +2,29 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
-    <ApplicationIcon />
-    <OutputType>Library</OutputType>
-    <StartupObject />
-    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+      <PackageReleaseNotes></PackageReleaseNotes>
+      <GenerateAssemblyInfo>true</GenerateAssemblyInfo>
+      <Authors>MDD4All.de</Authors>
+      <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+      <Company>MDD4All.de</Company>
+      <Copyright>© MDD4All.de</Copyright>
+      <Version>1.0.0.0</Version>
+      <PackageTags>MongoDB DataAccess Generic</PackageTags>
+      <Description>Generic data accessor for MongoDB</Description>
   </PropertyGroup>
-
+    
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+        <DefineConstants>DEBUG;TRACE</DefineConstants>
+        <DebugType>full</DebugType>
+        <DebugSymbols>true</DebugSymbols>
+    </PropertyGroup>
+    
   <ItemGroup>
     <PackageReference Include="MongoDB.Driver" Version="2.11.4" />
+  </ItemGroup>
+    
+  <ItemGroup>
+    <Folder Include="Properties\" />
   </ItemGroup>
 
 </Project>
