@@ -22,11 +22,11 @@
     </PropertyGroup>
     
   <ItemGroup>
-    <PackageReference Include="MongoDB.Driver" Version="2.11.4" />
+    <Folder Include="Properties\" />
   </ItemGroup>
     
   <ItemGroup>
-    <Folder Include="Properties\" />
+    <PackageReference Include="MongoDB.Driver.signed" Version="2.12.2" />
   </ItemGroup>
 
 </Project>
