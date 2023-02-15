@@ -13,6 +13,8 @@
         <Description>Generic data accessor for MongoDB</Description>
         <SignAssembly>true</SignAssembly>
         <AssemblyOriginatorKeyFile>MDD4All_Github.snk</AssemblyOriginatorKeyFile>
+        <RootNamespace>$(MSBuildProjectName.Replace("-dev", ""))</RootNamespace>
+        <AssemblyName>$(MSBuildProjectName.Replace("-dev", ""))</AssemblyName>
     </PropertyGroup>
 
     <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
