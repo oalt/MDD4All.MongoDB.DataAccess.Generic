@@ -72,7 +72,7 @@ namespace MDD4All.MongoDB.DataAccess.Generic
 
                 result = _db.GetCollection<T>(_collectionName).Find(filter).Single<T>();
             }
-            catch (Exception exception)
+            catch
             {
 
             }
@@ -88,7 +88,7 @@ namespace MDD4All.MongoDB.DataAccess.Generic
 
                 result = _db.GetCollection<T>(_collectionName).Find(filter).ToList();
             }
-            catch (Exception exception)
+            catch
             {
 
             }
@@ -139,7 +139,7 @@ namespace MDD4All.MongoDB.DataAccess.Generic
 
                 ReplaceOneResult result = collection.ReplaceOne(filter, item, new UpdateOptions() { IsUpsert = true });
             }
-            catch (Exception ex)
+            catch
             {
 
             }
@@ -162,7 +162,7 @@ namespace MDD4All.MongoDB.DataAccess.Generic
                     result = true;
                 }
             }
-            catch (Exception ex)
+            catch
             {
                 result = false;
             }
