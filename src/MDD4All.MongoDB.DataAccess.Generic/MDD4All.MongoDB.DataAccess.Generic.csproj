@@ -14,6 +14,7 @@
       <SignAssembly>true</SignAssembly>
       <AssemblyOriginatorKeyFile>MDD4All_Github.snk</AssemblyOriginatorKeyFile>
       <PackageReadmeFile>Nuget.md</PackageReadmeFile>
+      <PackageLicenseExpression>MIT</PackageLicenseExpression>
   </PropertyGroup>
     
     <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
